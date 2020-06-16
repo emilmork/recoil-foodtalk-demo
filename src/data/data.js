@@ -9,7 +9,7 @@ export default {
       types: ["Dinner"],
     },
     {
-      name: "Kylling",
+      name: "Chicken tikka",
       desc: "Juicy and tasty",
       categories: ["Fast"],
       types: ["Dinner"],
@@ -49,6 +49,18 @@ export default {
       desc: "Perfect for the date",
       categories: ["Cozy", "Healthy"],
       types: ["Dinner", "Lunch"],
+    },
+    {
+      name: "Crumble",
+      desc: "Enjoy all year",
+      categories: ["Cozy"],
+      types: ["Dinner", "Lunch"],
+    },
+    {
+      name: "Baked potato",
+      desc: "Perfect your spud technique then pile our filling ideas high.",
+      categories: ["Fast", "Cozy"],
+      types: ["Dinner"],
     },
   ],
 };
