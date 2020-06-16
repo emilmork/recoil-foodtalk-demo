@@ -19,7 +19,7 @@ export default () => {
   };
 
   return (
-    <nav class="list-none -mb-1">
+    <nav className="list-none -mb-1">
       {categories.map((category) => {
         const isSelected = selectedCategories.includes(category);
         return (

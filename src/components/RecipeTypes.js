@@ -16,7 +16,7 @@ export default () => {
     }
   };
   return (
-    <nav class="list-none -mb-1">
+    <nav className="list-none -mb-1">
       {receipeTypes.map((type) => {
         const isSelected = selectedTypes.includes(type);
 
