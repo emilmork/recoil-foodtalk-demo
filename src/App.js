@@ -4,13 +4,16 @@ import RecipeCategories from "./components/RecipeCategories";
 import RecipeTypes from "./components/RecipeTypes";
 import Recepes from "./components/Recepes";
 import Search from "./components/Search";
+import FilterSummary from "./components/FilterSummary";
 
 export default () => {
   return (
     <div className="text-gray-700 body-font">
       <Header />
-      <div className="px-5 py-24 mx-auto flex flex-col">
+      <div className="px-5 py-12 mx-auto flex flex-col">
         <div className="lg:w-4/6 mx-auto">
+          <FilterSummary />
+
           <div className="flex flex-col sm:flex-row mt-10">
             <div>
               <Search />

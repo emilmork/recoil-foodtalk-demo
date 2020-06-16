@@ -1,13 +1,13 @@
 import React from "react";
 import classnames from "classnames";
 
-import { recipeCategoriesQuery, selectedCategoresState } from "../store";
+import { recipeCategoriesQuery, selectedCategoriesState } from "../store";
 import { useRecoilValue, useRecoilState } from "recoil";
 
 export default () => {
   const categories = useRecoilValue(recipeCategoriesQuery);
   const [selectedCategories, setSelectedCategories] = useRecoilState(
-    selectedCategoresState
+    selectedCategoriesState
   );
 
   const updateSelectedCategory = (category) => {

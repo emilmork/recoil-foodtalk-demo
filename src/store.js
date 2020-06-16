@@ -3,7 +3,7 @@ import { fetchRecipes, fetchFoodCategories, fetchFoodTypes } from "./data/ajax";
 import { atom, selector } from "recoil";
 
 // Local state
-export const selectedCategoresState = atom({
+export const selectedCategoriesState = atom({
   key: "selectedCategores",
   default: [],
 });
@@ -42,7 +42,7 @@ export const filteredRecipesState = selector({
   get: ({ get }) => {
     const recipes = get(recipesQuery);
 
-    const selectedCategories = get(selectedCategoresState);
+    const selectedCategories = get(selectedCategoriesState);
     const selectedTypes = get(selectedTypesState);
     const search = get(recipeSearchState);
 
