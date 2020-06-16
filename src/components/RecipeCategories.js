@@ -23,19 +23,18 @@ export default () => {
       {categories.map((category) => {
         const isSelected = selectedCategories.includes(category);
         return (
-          <li
-            key={category}
-            className="cursor-pointer"
-            onClick={() => updateSelectedCategory(category)}
-          >
-            <a
-              className={classnames("text-gray-600 hover:text-gray-800", {
-                "text-green-600": isSelected,
-                "hover:text-green-800": isSelected,
-              })}
+          <li key={category} onClick={() => updateSelectedCategory(category)}>
+            <label
+              className={classnames(
+                "text-gray-600 hover:text-gray-800 cursor-pointer",
+                {
+                  "text-green-600": isSelected,
+                  "hover:text-green-800": isSelected,
+                }
+              )}
             >
               {category}
-            </a>
+            </label>
           </li>
         );
       })}

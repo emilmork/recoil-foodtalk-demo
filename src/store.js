@@ -58,19 +58,19 @@ export const filteredRecipesState = selector({
 
 // Utils
 function hasCategory(recipe, selectedCategories) {
-  if (selectedCategories.length == 0) return true;
+  if (selectedCategories.length === 0) return true;
 
   return selectedCategories.some((cat) => recipe.categories.includes(cat));
 }
 
 function hasType(recipe, selectedTypes) {
-  if (selectedTypes.length == 0) return true;
+  if (selectedTypes.length === 0) return true;
 
   return selectedTypes.some((cat) => recipe.types.includes(cat));
 }
 
 function hasName(recipe, search) {
-  if (search == "") return true;
+  if (search === "") return true;
 
   return recipe.name.toLowerCase().indexOf(search.toLowerCase()) >= 0;
 }

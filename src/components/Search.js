@@ -1,7 +1,7 @@
 import React from "react";
 
 import { recipeSearchState } from "../store";
-import { useRecoilValue, useRecoilState } from "recoil";
+import { useRecoilState } from "recoil";
 
 export default () => {
   const [recipeSearch, setRecipeSearch] = useRecoilState(recipeSearchState);

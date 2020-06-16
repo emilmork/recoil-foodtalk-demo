@@ -21,19 +21,18 @@ export default () => {
         const isSelected = selectedTypes.includes(type);
 
         return (
-          <li
-            class="cursor-pointer"
-            key={type}
-            onClick={() => updateSelectedType(type)}
-          >
-            <a
-              className={classnames("text-gray-600 hover:text-gray-800", {
-                "text-green-600": isSelected,
-                "hover:text-green-800": isSelected,
-              })}
+          <li key={type} onClick={() => updateSelectedType(type)}>
+            <label
+              className={classnames(
+                "text-gray-600 hover:text-gray-800 cursor-pointer",
+                {
+                  "text-green-600": isSelected,
+                  "hover:text-green-800": isSelected,
+                }
+              )}
             >
               {type}
-            </a>
+            </label>
           </li>
         );
       })}
