@@ -1,5 +1,6 @@
 import data from "./data";
 
+// API placeholder
 export const fetchFoodCategories = () =>
   new Promise((resolve) => {
     setTimeout(() => {

@@ -15,6 +15,14 @@ export default () => {
             </h2>
             <Reviews />
             <p class="leading-relaxed text-base mb-4">{recipe.desc}</p>
+            <div className="flex justify-between">
+              <span className="text-sm text-yellow-800">
+                {recipe.categories.join(", ")}
+              </span>
+              <span className="text-sm text-indigo-800">
+                {recipe.types.join(", ")}
+              </span>
+            </div>
           </div>
         </div>
       ))}
