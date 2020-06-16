@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/recoil-foodtalk-demo/precache-manifest.f5cc59bd67618ec3e1237455ee631569.js"
+  "/recoil-foodtalk-demo/precache-manifest.bbfd0bc77f237282619fea7e40214ab1.js"
 );
 
 self.addEventListener('message', (event) => {
