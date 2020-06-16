@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3b1a5117f3a403e041163ec79436974e",
+    "revision": "6cc12796302a47fe50586ca3109be2b7",
     "url": "/recoil-foodtalk-demo/index.html"
   },
   {
-    "revision": "6d3c8d648a86ff10c6af",
+    "revision": "cc8e8145770b4a316f5d",
     "url": "/recoil-foodtalk-demo/static/css/main.8f623235.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/recoil-foodtalk-demo/static/js/2.8ef2803f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6d3c8d648a86ff10c6af",
-    "url": "/recoil-foodtalk-demo/static/js/main.f5eed84d.chunk.js"
+    "revision": "cc8e8145770b4a316f5d",
+    "url": "/recoil-foodtalk-demo/static/js/main.7b065a89.chunk.js"
   },
   {
     "revision": "ef1bdcc853170b6e14cf",
