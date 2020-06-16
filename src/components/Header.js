@@ -20,6 +20,7 @@ export default () => (
           Recipes
         </button>
       </nav>
+      <a href="https://github.com/emilmork/recoil-foodtalk-demo">Github</a>
     </div>
   </header>
 );
