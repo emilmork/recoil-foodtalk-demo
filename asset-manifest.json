@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/recoil-foodtalk-demo/static/css/main.8f623235.chunk.css",
-    "main.js": "/recoil-foodtalk-demo/static/js/main.bf2dafc9.chunk.js",
-    "main.js.map": "/recoil-foodtalk-demo/static/js/main.bf2dafc9.chunk.js.map",
+    "main.js": "/recoil-foodtalk-demo/static/js/main.f5eed84d.chunk.js",
+    "main.js.map": "/recoil-foodtalk-demo/static/js/main.f5eed84d.chunk.js.map",
     "runtime-main.js": "/recoil-foodtalk-demo/static/js/runtime-main.d797117d.js",
     "runtime-main.js.map": "/recoil-foodtalk-demo/static/js/runtime-main.d797117d.js.map",
     "static/js/2.8ef2803f.chunk.js": "/recoil-foodtalk-demo/static/js/2.8ef2803f.chunk.js",
     "static/js/2.8ef2803f.chunk.js.map": "/recoil-foodtalk-demo/static/js/2.8ef2803f.chunk.js.map",
     "index.html": "/recoil-foodtalk-demo/index.html",
-    "precache-manifest.cebe4256f87f30359e6650c724885e3d.js": "/recoil-foodtalk-demo/precache-manifest.cebe4256f87f30359e6650c724885e3d.js",
+    "precache-manifest.ba4c756124ae594a8684bba5c5c15943.js": "/recoil-foodtalk-demo/precache-manifest.ba4c756124ae594a8684bba5c5c15943.js",
     "service-worker.js": "/recoil-foodtalk-demo/service-worker.js",
     "static/css/main.8f623235.chunk.css.map": "/recoil-foodtalk-demo/static/css/main.8f623235.chunk.css.map",
     "static/js/2.8ef2803f.chunk.js.LICENSE.txt": "/recoil-foodtalk-demo/static/js/2.8ef2803f.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.d797117d.js",
     "static/js/2.8ef2803f.chunk.js",
     "static/css/main.8f623235.chunk.css",
-    "static/js/main.bf2dafc9.chunk.js"
+    "static/js/main.f5eed84d.chunk.js"
   ]
 }
