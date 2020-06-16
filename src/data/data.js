@@ -27,7 +27,7 @@ export default {
       types: ["Breakfast"],
     },
     {
-      name: "Pasta & kreps",
+      name: "Creamy pasta",
       desc: "Proper evening food",
       categories: ["Cozy"],
       types: ["Dinner"],
