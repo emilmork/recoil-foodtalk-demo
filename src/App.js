@@ -35,7 +35,11 @@ export default () => {
               </div>
             </div>
             <div className="sm:w-2/3 sm:pl-8 sm:border-l border-gray-300 sm:border-t-0 border-t">
-              <Suspense fallback={<span>Loading recipes...</span>}>
+              <Suspense
+                fallback={
+                  <div className="text-center py-6">Loading recipes...</div>
+                }
+              >
                 <Recepes />
               </Suspense>
             </div>
