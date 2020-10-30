@@ -4,6 +4,8 @@
 
 Simple app that illustrates how to easily share state between components and how to combine synchronous and asynchronous state.
 
+![](https://github.com/emilmork/recoil-foodtalk-demo/blob/master/screenshot.png)
+
 [Recoiljs documentation](https://recoiljs.org)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
