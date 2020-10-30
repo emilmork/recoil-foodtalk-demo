@@ -1,43 +1,52 @@
 import { fetchRecipes, fetchFoodCategories, fetchFoodTypes } from "./data/ajax";
+import { Category, Recipe, RecipeType, RecipeFilter } from './models';
 
 import { atom, selector } from "recoil";
 
 // Local state
-export const selectedCategoriesState = atom({
+export const selectedCategoriesState = atom<Category[]>({
   key: "selectedCategores",
   default: [],
 });
 
-export const selectedTypesState = atom({
+export const selectedTypesState = atom<RecipeType[]>({
   key: "selectedTypes",
   default: [],
 });
 
-export const recipeSearchState = atom({
+export const recipeSearchState = atom<string>({
   key: "search",
   default: "",
 });
 
 // Queries
-export const recipeCategoriesQuery = selector({
+export const recipeCategoriesQuery = selector<Category[]>({
   key: "categoriesQuery",
-  default: [],
   get: () => fetchFoodCategories(),
 });
 
-export const recipeTypesQuery = selector({
+export const recipeTypesQuery = selector<RecipeType[]>({
   key: "typeQuery",
-  default: [],
   get: () => fetchFoodTypes(),
 });
 
-const recipesQuery = selector({
+const recipesQuery = selector<Recipe[]>({
   key: "recipesQuery",
   get: () => fetchRecipes(),
 });
 
 // Derived state
-export const filteredRecipesState = selector({
+export const filterSummary = selector<RecipeFilter>({
+  key: "filterSummary",
+  get: async ({ get }) => {
+    return {
+      selectedCategories: get(selectedCategoriesState),
+      selectedTypes: get(selectedTypesState),
+      search: get(recipeSearchState),
+    };
+  },
+});
+export const filteredRecipesState = selector<Recipe[]>({
   key: "filteredRecepies",
   get: ({ get }) => {
     const recipes = get(recipesQuery);
@@ -57,19 +66,19 @@ export const filteredRecipesState = selector({
 });
 
 // Utils
-function hasCategory(recipe, selectedCategories) {
+function hasCategory(recipe: Recipe, selectedCategories: Category[]): boolean {
   if (selectedCategories.length === 0) return true;
 
   return selectedCategories.some((cat) => recipe.categories.includes(cat));
 }
 
-function hasType(recipe, selectedTypes) {
+function hasType(recipe: Recipe, selectedTypes: RecipeType[]): boolean {
   if (selectedTypes.length === 0) return true;
 
   return selectedTypes.some((cat) => recipe.types.includes(cat));
 }
 
-function hasName(recipe, search) {
+function hasName(recipe: Recipe, search: string): boolean {
   if (search === "") return true;
 
   return recipe.name.toLowerCase().indexOf(search.toLowerCase()) >= 0;

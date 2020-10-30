@@ -3,12 +3,13 @@ import classnames from "classnames";
 
 import { recipeTypesQuery, selectedTypesState } from "../store";
 import { useRecoilValue, useRecoilState } from "recoil";
+import { RecipeType } from "../models";
 
 export default () => {
   const receipeTypes = useRecoilValue(recipeTypesQuery);
   const [selectedTypes, setSelectedTypes] = useRecoilState(selectedTypesState);
 
-  const updateSelectedType = (type) => {
+  const updateSelectedType = (type: RecipeType) => {
     if (selectedTypes.includes(type)) {
       setSelectedTypes(selectedTypes.filter((c) => c !== type));
     } else {
