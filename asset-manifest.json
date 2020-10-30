@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/recoil-foodtalk-demo/static/css/main.8f623235.chunk.css",
-    "main.js": "/recoil-foodtalk-demo/static/js/main.5c1eda02.chunk.js",
-    "main.js.map": "/recoil-foodtalk-demo/static/js/main.5c1eda02.chunk.js.map",
+    "main.js": "/recoil-foodtalk-demo/static/js/main.b49d290d.chunk.js",
+    "main.js.map": "/recoil-foodtalk-demo/static/js/main.b49d290d.chunk.js.map",
     "runtime-main.js": "/recoil-foodtalk-demo/static/js/runtime-main.d797117d.js",
     "runtime-main.js.map": "/recoil-foodtalk-demo/static/js/runtime-main.d797117d.js.map",
-    "static/js/2.8ef2803f.chunk.js": "/recoil-foodtalk-demo/static/js/2.8ef2803f.chunk.js",
-    "static/js/2.8ef2803f.chunk.js.map": "/recoil-foodtalk-demo/static/js/2.8ef2803f.chunk.js.map",
+    "static/js/2.13973417.chunk.js": "/recoil-foodtalk-demo/static/js/2.13973417.chunk.js",
+    "static/js/2.13973417.chunk.js.map": "/recoil-foodtalk-demo/static/js/2.13973417.chunk.js.map",
     "index.html": "/recoil-foodtalk-demo/index.html",
-    "precache-manifest.0e4c140a6e6f2827392c4efe2aacb970.js": "/recoil-foodtalk-demo/precache-manifest.0e4c140a6e6f2827392c4efe2aacb970.js",
+    "precache-manifest.01124c70ed49a60d3491af8327b0ea43.js": "/recoil-foodtalk-demo/precache-manifest.01124c70ed49a60d3491af8327b0ea43.js",
     "service-worker.js": "/recoil-foodtalk-demo/service-worker.js",
     "static/css/main.8f623235.chunk.css.map": "/recoil-foodtalk-demo/static/css/main.8f623235.chunk.css.map",
-    "static/js/2.8ef2803f.chunk.js.LICENSE.txt": "/recoil-foodtalk-demo/static/js/2.8ef2803f.chunk.js.LICENSE.txt"
+    "static/js/2.13973417.chunk.js.LICENSE.txt": "/recoil-foodtalk-demo/static/js/2.13973417.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d797117d.js",
-    "static/js/2.8ef2803f.chunk.js",
+    "static/js/2.13973417.chunk.js",
     "static/css/main.8f623235.chunk.css",
-    "static/js/main.5c1eda02.chunk.js"
+    "static/js/main.b49d290d.chunk.js"
   ]
 }
