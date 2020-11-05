@@ -2,13 +2,14 @@ import React from "react";
 
 import { filteredRecipesState } from "../store";
 import { useRecoilValue } from "recoil";
+import { Recipe } from "../models";
 
 export default () => {
   const recipes = useRecoilValue(filteredRecipesState);
 
   return (
     <div className="flex flex-wrap">
-      {recipes.map((recipe) => (
+      {recipes.map((recipe: Recipe) => (
         <div key={recipe.name} className="md:w-1/2 cursor-pointer">
           <div className="border-2 border-gray-200 m-2 p-4">
             <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
